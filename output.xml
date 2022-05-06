@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.0 on win32)" generated="20220505 15:28:55.715" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo2 Suites" source="C:\Users\shubham gupta\PycharmProjects\Robot_project\selenium_suites\demo2_suites.robot">
+<test id="s1-t1" name="Tc1" line="7">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>path</arg>
+<arg>C:\\Users\\shubham gupta\\Documents\\robot framework\\driver</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220505 15:28:56.036" level="INFO">Environment variable 'path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.2\bin;C:\Users\shubham gupta\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\shubham gupta\AppData\Local\Programs\Python\Python310\;C:\Users\shubham gupta\AppData\Local\Microsoft\WindowsApps;C:\Users\shubham gupta\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\shubham gupta\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm 2021.3.3\bin;;;C:\Users\shubham gupta\Documents\robot framework\driver'.</msg>
+<status status="PASS" starttime="20220505 15:28:56.036" endtime="20220505 15:28:56.036"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.Facebook.com/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220505 15:28:56.037" level="INFO">Opening browser 'chrome' to base url 'https://www.Facebook.com/'.</msg>
+<status status="PASS" starttime="20220505 15:28:56.037" endtime="20220505 15:28:59.920"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220505 15:28:59.920" endtime="20220505 15:29:00.046"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220505 15:29:00.047" endtime="20220505 15:29:00.050"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Create New Account</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220505 15:29:00.052" level="INFO">Clicking element 'link=Create New Account'.</msg>
+<status status="PASS" starttime="20220505 15:29:00.051" endtime="20220505 15:29:00.407"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=firstname</arg>
+<arg>shubham</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 15:29:00.410" level="INFO">Typing text 'shubham' into text field 'name=firstname'.</msg>
+<status status="PASS" starttime="20220505 15:29:00.409" endtime="20220505 15:29:01.443"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=lastname</arg>
+<arg>Gupta</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 15:29:01.444" level="INFO">Typing text 'Gupta' into text field 'name=lastname'.</msg>
+<status status="PASS" starttime="20220505 15:29:01.443" endtime="20220505 15:29:01.719"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=reg_email__</arg>
+<arg>anchal15121999@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 15:29:01.720" level="INFO">Typing text 'anchal15121999@gmail.com' into text field 'name=reg_email__'.</msg>
+<status status="PASS" starttime="20220505 15:29:01.719" endtime="20220505 15:29:02.048"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=reg_email_confirmation__</arg>
+<arg>anchal15121999@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 15:29:02.049" level="INFO">Typing text 'anchal15121999@gmail.com' into text field 'name=reg_email_confirmation__'.</msg>
+<status status="PASS" starttime="20220505 15:29:02.049" endtime="20220505 15:29:02.432"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password_step_input</arg>
+<arg>Anchal@15</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 15:29:02.434" level="INFO">Typing password into text field 'id=password_step_input'.</msg>
+<msg timestamp="20220505 15:29:02.564" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220505 15:29:02.699" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220505 15:29:02.434" endtime="20220505 15:29:02.700"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=day</arg>
+<arg>20</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220505 15:29:02.701" level="INFO">Selecting options from selection list 'id=day' by label 20.</msg>
+<status status="PASS" starttime="20220505 15:29:02.701" endtime="20220505 15:29:03.055"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@value='-1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220505 15:29:03.056" level="INFO">Clicking element 'xpath=//input[@value='-1']'.</msg>
+<status status="PASS" starttime="20220505 15:29:03.056" endtime="20220505 15:29:03.295"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=websubmit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220505 15:29:03.297" level="INFO">Clicking element 'name=websubmit'.</msg>
+<status status="PASS" starttime="20220505 15:29:03.296" endtime="20220505 15:29:03.572"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220505 15:29:03.573" endtime="20220505 15:29:05.886"/>
+</kw>
+<status status="PASS" starttime="20220505 15:28:56.034" endtime="20220505 15:29:05.888"/>
+</test>
+<status status="PASS" starttime="20220505 15:28:55.717" endtime="20220505 15:29:05.895"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2 Suites">Demo2 Suites</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

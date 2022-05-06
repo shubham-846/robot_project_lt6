@@ -1,108 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.0 on win32)" generated="20220505 15:28:55.715" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo2 Suites" source="C:\Users\shubham gupta\PycharmProjects\Robot_project\selenium_suites\demo2_suites.robot">
+<robot generator="Robot 5.0 (Python 3.10.0 on win32)" generated="20220506 10:17:11.608" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo3 Suites" source="C:\Users\shubham gupta\PycharmProjects\Robot_project\selenium_suites\demo3_suites.robot">
 <test id="s1-t1" name="Tc1" line="7">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>path</arg>
 <arg>C:\\Users\\shubham gupta\\Documents\\robot framework\\driver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220505 15:28:56.036" level="INFO">Environment variable 'path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.2\bin;C:\Users\shubham gupta\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\shubham gupta\AppData\Local\Programs\Python\Python310\;C:\Users\shubham gupta\AppData\Local\Microsoft\WindowsApps;C:\Users\shubham gupta\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\shubham gupta\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm 2021.3.3\bin;;;C:\Users\shubham gupta\Documents\robot framework\driver'.</msg>
-<status status="PASS" starttime="20220505 15:28:56.036" endtime="20220505 15:28:56.036"/>
+<msg timestamp="20220506 10:17:11.919" level="INFO">Environment variable 'path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.2\bin;C:\Users\shubham gupta\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\shubham gupta\AppData\Local\Programs\Python\Python310\;C:\Users\shubham gupta\AppData\Local\Microsoft\WindowsApps;C:\Users\shubham gupta\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\shubham gupta\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm 2021.3.3\bin;;;C:\Users\shubham gupta\Documents\robot framework\driver'.</msg>
+<status status="PASS" starttime="20220506 10:17:11.918" endtime="20220506 10:17:11.919"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>url=https://www.Facebook.com/</arg>
+<arg>url=https://www.salesforce.com/in/form/signup/freetrial-sales/?d=topnav2-btn-ft</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220505 15:28:56.037" level="INFO">Opening browser 'chrome' to base url 'https://www.Facebook.com/'.</msg>
-<status status="PASS" starttime="20220505 15:28:56.037" endtime="20220505 15:28:59.920"/>
+<msg timestamp="20220506 10:17:11.919" level="INFO">Opening browser 'chrome' to base url 'https://www.salesforce.com/in/form/signup/freetrial-sales/?d=topnav2-btn-ft'.</msg>
+<status status="PASS" starttime="20220506 10:17:11.919" endtime="20220506 10:17:24.986"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220505 15:28:59.920" endtime="20220505 15:29:00.046"/>
+<status status="PASS" starttime="20220506 10:17:24.986" endtime="20220506 10:17:25.168"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220505 15:29:00.047" endtime="20220505 15:29:00.050"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>link=Create New Account</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220505 15:29:00.052" level="INFO">Clicking element 'link=Create New Account'.</msg>
-<status status="PASS" starttime="20220505 15:29:00.051" endtime="20220505 15:29:00.407"/>
+<status status="PASS" starttime="20220506 10:17:25.168" endtime="20220506 10:17:25.170"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>name=firstname</arg>
-<arg>shubham</arg>
+<arg>name=UserFirstName</arg>
+<arg>Shubham</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220505 15:29:00.410" level="INFO">Typing text 'shubham' into text field 'name=firstname'.</msg>
-<status status="PASS" starttime="20220505 15:29:00.409" endtime="20220505 15:29:01.443"/>
+<msg timestamp="20220506 10:17:25.171" level="INFO">Typing text 'Shubham' into text field 'name=UserFirstName'.</msg>
+<status status="PASS" starttime="20220506 10:17:25.171" endtime="20220506 10:17:25.554"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>name=lastname</arg>
+<arg>name=UserLastName</arg>
 <arg>Gupta</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220505 15:29:01.444" level="INFO">Typing text 'Gupta' into text field 'name=lastname'.</msg>
-<status status="PASS" starttime="20220505 15:29:01.443" endtime="20220505 15:29:01.719"/>
+<msg timestamp="20220506 10:17:25.555" level="INFO">Typing text 'Gupta' into text field 'name=UserLastName'.</msg>
+<status status="PASS" starttime="20220506 10:17:25.554" endtime="20220506 10:17:25.806"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>name=reg_email__</arg>
-<arg>anchal15121999@gmail.com</arg>
+<arg>name=UserEmail</arg>
+<arg>sguplt.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220505 15:29:01.720" level="INFO">Typing text 'anchal15121999@gmail.com' into text field 'name=reg_email__'.</msg>
-<status status="PASS" starttime="20220505 15:29:01.719" endtime="20220505 15:29:02.048"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=reg_email_confirmation__</arg>
-<arg>anchal15121999@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220505 15:29:02.049" level="INFO">Typing text 'anchal15121999@gmail.com' into text field 'name=reg_email_confirmation__'.</msg>
-<status status="PASS" starttime="20220505 15:29:02.049" endtime="20220505 15:29:02.432"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id=password_step_input</arg>
-<arg>Anchal@15</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220505 15:29:02.434" level="INFO">Typing password into text field 'id=password_step_input'.</msg>
-<msg timestamp="20220505 15:29:02.564" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220505 15:29:02.699" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220505 15:29:02.434" endtime="20220505 15:29:02.700"/>
+<msg timestamp="20220506 10:17:25.807" level="INFO">Typing text 'sguplt.com' into text field 'name=UserEmail'.</msg>
+<status status="PASS" starttime="20220506 10:17:25.807" endtime="20220506 10:17:26.103"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>id=day</arg>
-<arg>20</arg>
+<arg>name=UserTitle</arg>
+<arg>IT Manager</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220505 15:29:02.701" level="INFO">Selecting options from selection list 'id=day' by label 20.</msg>
-<status status="PASS" starttime="20220505 15:29:02.701" endtime="20220505 15:29:03.055"/>
+<msg timestamp="20220506 10:17:26.104" level="INFO">Selecting options from selection list 'name=UserTitle' by label IT Manager.</msg>
+<status status="PASS" starttime="20220506 10:17:26.103" endtime="20220506 10:17:26.380"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=CompanyName</arg>
+<arg>LT</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 10:17:26.381" level="INFO">Typing text 'LT' into text field 'name=CompanyName'.</msg>
+<status status="PASS" starttime="20220506 10:17:26.381" endtime="20220506 10:17:26.649"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>name=CompanyEmployees</arg>
+<arg>250</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220506 10:17:26.650" level="INFO">Selecting options from selection list 'name=CompanyEmployees' by value 250.</msg>
+<status status="PASS" starttime="20220506 10:17:26.650" endtime="20220506 10:17:26.879"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=CompanyCountry</arg>
+<arg>United Kingdom</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220506 10:17:26.880" level="INFO">Selecting options from selection list 'name=CompanyCountry' by label United Kingdom.</msg>
+<status status="PASS" starttime="20220506 10:17:26.880" endtime="20220506 10:17:27.190"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//input[@value='-1']</arg>
+<arg>xpath=(//div[@class=' Checkbox-ui']0[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220505 15:29:03.056" level="INFO">Clicking element 'xpath=//input[@value='-1']'.</msg>
-<status status="PASS" starttime="20220505 15:29:03.056" endtime="20220505 15:29:03.295"/>
+<msg timestamp="20220506 10:17:27.192" level="INFO">Clicking element 'xpath=(//div[@class=' Checkbox-ui']0[1]'.</msg>
+<msg timestamp="20220506 10:17:27.518" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220506 10:17:27.519" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression (//div[@class=' Checkbox-ui']0[1] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@class=' Checkbox-ui']0[1]' is not a valid XPath expression.
+  (Session info: chrome=101.0.4951.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x004CB8F3+2406643]
+	Ordinal0 [0x0045AF31+1945393]
+	Ordinal0 [0x0034C748+837448]
+	Ordinal0 [0x0034F154+848212]
+	Ordinal0 [0x0034F012+847890]
+	Ordinal0 [0x0034F2A0+848544]
+	Ordinal0 [0x00378FF5+1019893]
+	Ordinal0 [0x0037957B+1021307]
+	Ordinal0 [0x003A63AC+1205164]
+	Ordinal0 [0x003942C4+1131204]
+	Ordinal0 [0x003A4682+1197698]
+	Ordinal0 [0x00394096+1130646]
+	Ordinal0 [0x0036E636+976438]
+	Ordinal0 [0x0036F546+980294]
+	GetHandleVerifier [0x00739612+2498066]
+	GetHandleVerifier [0x0072C920+2445600]
+	GetHandleVerifier [0x00564F2A+579370]
+	GetHandleVerifier [0x00563D36+574774]
+	Ordinal0 [0x00461C0B+1973259]
+	Ordinal0 [0x00466688+1992328]
+	Ordinal0 [0x00466775+1992565]
+	Ordinal0 [0x0046F8D1+2029777]
+	BaseThreadInitThunk [0x753AFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76EC75F4+228]
+	RtlGetAppContainerNamedObjectPath [0x76EC75C4+180]
+</msg>
+<status status="FAIL" starttime="20220506 10:17:27.191" endtime="20220506 10:17:27.616"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>name=websubmit</arg>
+<arg>name=Start My Free Trial</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220505 15:29:03.297" level="INFO">Clicking element 'name=websubmit'.</msg>
-<status status="PASS" starttime="20220505 15:29:03.296" endtime="20220505 15:29:03.572"/>
+<status status="NOT RUN" starttime="20220506 10:17:27.616" endtime="20220506 10:17:27.616"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220505 15:29:03.573" endtime="20220505 15:29:05.886"/>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//span[contains(@id,'UserPhone')]</arg>
+<arg>Enter a valid phone number</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" starttime="20220506 10:17:27.617" endtime="20220506 10:17:27.617"/>
 </kw>
-<status status="PASS" starttime="20220505 15:28:56.034" endtime="20220505 15:29:05.888"/>
+<status status="FAIL" starttime="20220506 10:17:11.917" endtime="20220506 10:17:27.618">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression (//div[@class=' Checkbox-ui']0[1] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@class=' Checkbox-ui']0[1]' is not a valid XPath expression.
+  (Session info: chrome=101.0.4951.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x004CB8F3+2406643]
+	Ordinal0 [0x0045AF31+1945393]
+	Ordinal0 [0x0034C748+837448]
+	Ordinal0 [0x0034F154+848212]
+	Ordinal0 [0x0034F012+847890]
+	Ordinal0 [0x0034F2A0+848544]
+	Ordinal0 [0x00378FF5+1019893]
+	Ordinal0 [0x0037957B+1021307]
+	Ordinal0 [0x003A63AC+1205164]
+	Ordinal0 [0x003942C4+1131204]
+	Ordinal0 [0x003A4682+1197698]
+	Ordinal0 [0x00394096+1130646]
+	Ordinal0 [0x0036E636+976438]
+	Ordinal0 [0x0036F546+980294]
+	GetHandleVerifier [0x00739612+2498066]
+	GetHandleVerifier [0x0072C920+2445600]
+	GetHandleVerifier [0x00564F2A+579370]
+	GetHandleVerifier [0x00563D36+574774]
+	Ordinal0 [0x00461C0B+1973259]
+	Ordinal0 [0x00466688+1992328]
+	Ordinal0 [0x00466775+1992565]
+	Ordinal0 [0x0046F8D1+2029777]
+	BaseThreadInitThunk [0x753AFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76EC75F4+228]
+	RtlGetAppContainerNamedObjectPath [0x76EC75C4+180]
+</status>
 </test>
-<status status="PASS" starttime="20220505 15:28:55.717" endtime="20220505 15:29:05.895"/>
+<status status="FAIL" starttime="20220506 10:17:11.610" endtime="20220506 10:17:27.625"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo2 Suites">Demo2 Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo3 Suites">Demo3 Suites</stat>
 </suite>
 </statistics>
 <errors>

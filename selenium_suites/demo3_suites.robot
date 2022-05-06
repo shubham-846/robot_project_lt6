@@ -9,8 +9,8 @@ Tc1
       Open Browser     url=https://www.salesforce.com/in/form/signup/freetrial-sales/?d=topnav2-btn-ft     browser=chrome
       Maximize Browser Window
       Set Selenium Implicit Wait    30s
-      Input Text    name=FirstName    Shubham
-      Input Text    name=LastName    Gupta
+      Input Text    name=UserFirstName    Shubham
+      Input Text    name=UserLastName    Gupta
       Input Text    name=UserEmail    sguplt.com
       Select From List By Label    name=UserTitle        IT Manager
       Input Text    name=CompanyName    LT
@@ -18,5 +18,6 @@ Tc1
       Select From List By Label    name=CompanyCountry       United Kingdom
       Click Element    xpath=(//div[@class=' Checkbox-ui']0[1]
       Click Element    name=Start My Free Trial
-      Element Text Should Be    locator=xpath=//span[contains(@id,'UserPhone')]          Enter a valid phone number
+      Element Text Should Be    xpath=//span[contains(@id,'UserPhone')]       Enter a valid phone number
+
 
